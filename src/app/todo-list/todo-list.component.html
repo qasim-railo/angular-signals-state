@@ -1,0 +1,14 @@
+ <div class="todo-list">
+      <h2>Todos ({{ stateService.todos().length }})</h2>
+      <div class="completed">Completed: {{ stateService.completedTodos().length }}</div>
+      <ul>
+        <li *ngFor="let todo of stateService.todos()">
+          <input 
+            type="checkbox" 
+            [checked]="todo.completed" 
+            (change)="stateService.toggleTodo(todo.id)"
+          >
+          <span [class.completed]="todo.completed">{{ todo.text }}</span>
+        </li>
+      </ul>
+    </div>

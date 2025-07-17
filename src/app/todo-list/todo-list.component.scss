@@ -1,0 +1,14 @@
+.todo-list {
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+    li {
+      list-style-type: none;
+      margin: 0.5rem 0;
+    }

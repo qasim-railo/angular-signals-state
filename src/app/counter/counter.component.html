@@ -1,0 +1,7 @@
+  <div class="counter">
+    
+      <h2>Name: {{ stateService.name() }}</h2>
+      <h2>Counter: {{ stateService.counter() }}</h2>
+      <button (click)="stateService.increment()">+</button>
+      <button (click)="stateService.decrement()">-</button>
+    </div>
